@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/kunth/OneDrive/Desktop/IT/Student_Management_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1510"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainStudent"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Category" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="128"/><column index="2" value="161"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Class" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="78"/><column index="2" value="111"/><column index="3" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Instock" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="1"/></sort><column_widths><column index="1" value="151"/><column index="2" value="116"/><column index="3" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Product" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="116"/><column index="2" value="149"/><column index="3" value="105"/><column index="4" value="128"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="R1" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="61"/><column index="3" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="R2" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="61"/><column index="3" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Student" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="2" value="128"/><column index="3" value="146"/><column index="4" value="78"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="StudentGrades" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="2" value="97"/><column index="3" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Subject" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="125"/><column index="3" value="67"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Warehouse" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="151"/><column index="2" value="207"/><column index="3" value="128"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO Class
+VALUES
+('C01','Computer Science','2020-2024'),
+('C02','TOEIC','2020-2024'),
+('C03','Math','2020-2024')
+INSERT INTO Student
+VALUES
+('T01','Nguyen Van A','Quan 1','C01'),
+('T02','Nguyen Van B','Quan 2','C01'),
+('T03','Nguyen Van C','Quan 3','C01'),
+('T04','Nguyen Van D','Quan 4','C01'),
+('T05','Nguyen Van E','Quan 5','C01'),
+('T06','Nguyen Van F','Quan 6','C02'),
+('T07','Nguyen Van G','Quan 7','C02'),
+('T08','Nguyen Van H','Quan 8','C02'),
+('T09','Nguyen Van I','Quan 9','C02'),
+('T10','Nguyen Van J','Quan 10','C02'),
+('T11','Nguyen Van K','Quan 11','C02'),
+('T12','Nguyen Van L','Quan 12','C02'),
+('T13','Nguyen Van M','Quan 1','C03'),
+('T14','Nguyen Van N','Quan 2','C03'),
+('T15','Nguyen Van O','Quan 3','C03')
+INSERT INTO Subject
+VALUES
+('S01','Toan',3),
+('S02','Anh',2),
+('S03','The duc',4),
+('S04','Vat ly',3),
+('S05','Hoa',2)
+INSERT INTO StudentGrades
+VALUES
+('T01','S01',9),
+('T01','S02',8),
+('T02','S02',8),
+('T02','S05',7),
+('T02','S03',4),
+('T03','S05',3),
+('T03','S04',7),
+('T04','S01',8),
+('T04','S02',8),
+('T04','S03',3),
+('T04','S04',9),
+('T04','S05',5),
+('T05','S05',7),
+('T05','S02',7),
+('T05','S03',7),
+('T05','S04',7),
+('T06','S01',3),
+('T06','S02',6),
+('T06','S03',9),
+('T06','S04',2),
+('T06','S05',8),
+('T14','S03',9)
+INSERT INTO Student
+VALUES
+('T16','John Wick','New York','C03'),
+('T17','Master Cheif','Quan 3','C03'),
+('T18','Yasuo','Quan 3','C03'),
+('T19','Nasus','Quan 3','C03'),
+('T20','Edna Mode','Quan 3','C03')</sql><sql name="SQL 2">5.1
+
+SELECT StudentID, StudentName
+FROM Student
+WHERE ClassID = 'C02'
+
+5.2
+
+SELECT A.StudentID, A.StudentName
+FROM Student A, Class B
+WHERE ClassName = 'Computer Science'
+AND A.ClassID = B.ClassID
+
+5.3
+
+SELECT A.*
+FROM Student A, Class B
+WHERE ClassYear ='2020-2024'
+AND A.ClassID = B.ClassID
+
+5.4
+
+SELECT SubjectName, Units
+FROM Subject
+WHERE SubjectID = 'S01'
+
+5.5
+
+SELECT Grades
+FROM StudentGrades
+WHERE SubjectID = 'S02'
+AND StudentID = 'T02'
+
+5.6
+
+SELECT A.SubjectID, SubjectName, Grades
+FROM StudentGrades A, Subject B
+WHERE StudentID = 'T02'
+AND Grades &lt;= 4
+AND A.SubjectID = B.SubjectID
+
+5.7
+
+SELECT SubjectID, SubjectName
+FROM Subject
+WHERE SubjectID NOT in (SELECT SubjectID
+						FROM StudentGrades
+						WHERE StudentID = 'T03')
+
+5.8
+
+SELECT B.ClassID,ClassName, count(*) AS Siso
+FROM Student A, Class B
+WHERE A.ClassID = B.ClassID 
+GROUP by B.ClassID, ClassName
+
+5.9
+
+SELECT ClassID, count(*) as SiSo
+FROM Student 
+GROUP BY ClassID
+HAVING SiSo = (SELECT max(SiSo)
+			   FROM (SELECT ClassID, count(*) as SiSo
+					 FROM Student 
+					 GROUP BY ClassID)
+)
+
+5.10
+
+SELECT StudentID, avg(Grades)
+FROM StudentGrades
+WHERE StudentID = 'T02'
+
+5.11
+
+SELECT A.StudentID, StudentName, avg(Grades)
+FROM Student A, StudentGrades B
+WHERE A.StudentID = B.StudentID
+GROUP BY A.StudentID
+
+5.12
+
+SELECT avg(Grades) AS 'GPA'
+FROM StudentGrades A, Student B
+WHERE ClassID = 'C02'
+AND A.StudentID = B.StudentID
+
+5.13
+
+SELECT ClassID, avg(Grades) AS 'GPA'
+FROM StudentGrades A, Student B
+WHERE A.StudentID = B.StudentID
+GROUP by ClassID
+
+5.14
+
+SELECT StudentID, avg(Grades) as 'GPA'
+FROM StudentGrades
+GROUP By StudentID
+HAVING GPA = (SELECT max(GPA)
+			  FROM (SELECT StudentID, avg(Grades) as 'GPA'
+					FROM StudentGrades
+					GROUP By StudentID)
+			  )</sql><current_tab id="1"/></tab_sql></sqlb_project>
